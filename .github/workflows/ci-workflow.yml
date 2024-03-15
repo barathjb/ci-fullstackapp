@@ -1,5 +1,4 @@
-name: 
-Udacraft-workflow
+name: Udacraft-workflow
 on:
   workflow_dispatch:
 
