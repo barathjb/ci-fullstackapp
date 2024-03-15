@@ -33,17 +33,17 @@ jobs:
 
       # Install the dependencies.
       - name: install dependencies
-      - run: cd backend && npm ci
+        run: cd backend && npm ci
 
       # Run the tests.
       - name: run tests
-      - run: cd backend && npm test
+        run: cd backend && npm test
 
       # Run the linter.
       - name:  run lint
-      - run: cd backend && npm run lint
+        run: cd backend && npm run lint
 
       # Send a console message at completion.
       - name: print message
-      - run: |
+        run: |
           echo "Hello ${{github.actor}}. You pushed to ${{github.repository}} at $(date)."
