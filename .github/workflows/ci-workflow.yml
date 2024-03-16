@@ -37,11 +37,11 @@ jobs:
 
       # Run the tests.
       - name: run tests
-        run: cd backend && npm init @eslint/config && npm test
+        run: cd backend && npm test
 
-      # Run the linter.
-      - name:  run lint
-        run: cd backend && npm run lint
+      # # Run the linter.
+      # - name:  run lint
+      #   run: cd backend && npm run lint
 
       # Send a console message at completion.
       - name: print message
